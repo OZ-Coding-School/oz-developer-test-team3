@@ -3,7 +3,7 @@ import globals from 'globals';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import { defineConfig, globalIgnores } from 'eslint/config';
-import tanstackQuery from '@tanstack/eslint-plugin-query';
+// import tanstackQuery from '@tanstack/eslint-plugin-query';
 
 export default defineConfig([
   globalIgnores(['dist']),
@@ -13,7 +13,7 @@ export default defineConfig([
       js.configs.recommended,
       reactHooks.configs.flat.recommended,
       reactRefresh.configs.vite,
-      tanstackQuery.configs.recommended,
+      // tanstackQuery.configs.recommended,
     ],
     languageOptions: {
       ecmaVersion: 2020,

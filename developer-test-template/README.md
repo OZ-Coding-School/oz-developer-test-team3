@@ -45,16 +45,16 @@ VITE_API_URL=<API 서버 주소>
 
 ## 기술 스택
 
-| 분류        | 기술                        |
-| ----------- | --------------------------- |
-| Framework   | React 19, Vite 7            |
-| Styling     | Tailwind CSS 4              |
-| Routing     | React Router 7              |
-| 서버 상태   | TanStack React Query        |
-| 클라이언트 상태 | Zustand                 |
-| HTTP Client | Axios                       |
-| Animation   | Motion                      |
-| Mock        | MSW                         |
+| 분류            | 기술                 |
+| --------------- | -------------------- |
+| Framework       | React 19, Vite 7     |
+| Styling         | Tailwind CSS 4       |
+| Routing         | React Router 7       |
+| 서버 상태       | TanStack React Query |
+| 클라이언트 상태 | Zustand              |
+| HTTP Client     | Axios                |
+| Animation       | Motion               |
+| Mock            | MSW                  |
 
 ## 프로젝트 구조
 
