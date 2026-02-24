@@ -1,0 +1,22 @@
+:root {
+  /**
+    * color
+    */
+  --color-primary: #ef6d8a;
+  --color-primary-hover: #e54d71;
+  --color-background: #fdf2f8;
+  --color-surface: #ffffff;
+
+  --text-heading: #1e2939;
+  --text-body: #364153;
+  --text-description: #4a5565;
+  --text-muted: #99a1af;
+  --progress-track: #e5e7eb;
+
+  /**
+    * Radius
+    */
+  --radius-sm: 16px;
+  --radius-md: 24px;
+  --radius-lg: 100px;
+}
