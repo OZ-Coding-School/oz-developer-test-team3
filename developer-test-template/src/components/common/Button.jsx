@@ -1,10 +1,9 @@
-const base =
-  'inline-flex items-center justify-center rounded-[var(--radius-sm)] font-medium';
+const base = 'inline-flex items-center justify-center rounded-sm font-medium';
 
 const variants = {
-  primary: 'bg-[#EF6D8A] text-white',
-  secondary: 'bg-[#FDF2F8] text-[#EF6D8A]',
-  option: 'bg-[#FDF2F8]',
+  primary: 'bg-primary text-white',
+  secondary: 'bg-background text-[#EF6D8A]',
+  option: 'bg-background',
 };
 
 const sizes = {
