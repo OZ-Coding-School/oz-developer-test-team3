@@ -2,7 +2,7 @@ const base = 'inline-flex items-center justify-center rounded-sm font-medium';
 
 const variants = {
   primary: 'bg-primary text-white',
-  secondary: 'bg-background text-[#EF6D8A]',
+  secondary: 'bg-background text-primary',
   option: 'bg-background',
 };
 
