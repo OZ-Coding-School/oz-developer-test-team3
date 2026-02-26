@@ -1,3 +1,5 @@
+import cn from '../../utils/cn';
+
 const base = 'inline-flex items-center justify-center rounded-sm font-medium';
 
 const variants = {
@@ -20,7 +22,7 @@ function Button({
 }) {
   return (
     <button
-      className={[base, variants[variant], sizes[size], className].join(' ')}
+      className={cn(base, variants[variant], sizes[size], className)}
       {...props}
     >
       {children}
