@@ -1,20 +1,18 @@
+import { Link } from 'react-router-dom';
 import Badge from '../components/common/Badge';
-import Card from '../components/common/Card';
 
 export default function HomePage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gradient-to-b from-[#FDF2F8] to-[#FFFFFF]">
-      <Card>
-        <div className="flex flex-wrap justify-center gap-2">
-          <Badge>#React</Badge>
-          <Badge>#TypeScript</Badge>
-          <Badge>#CSS</Badge>
-          <Badge>#Next</Badge>
-          <Badge>#HTML</Badge>
-          <Badge>#JS</Badge>
-          <Badge>#Next</Badge>
-        </div>
-      </Card>
-    </div>
+    <main>
+      <Link to="/question" className="rounded-lg bg-black px-4 py-2 text-white">
+        시작하기(질문페이지이동)
+      </Link>
+      <Link to="/test" className="rounded-lg bg-black px-4 py-2 text-white">
+        테스트페이지(라우터 확인용)
+      </Link>
+      <Link to="/result" className="rounded-lg bg-black px-4 py-2 text-white">
+        결과페이지(라우터확인용)
+      </Link>
+    </main>
   );
 }
