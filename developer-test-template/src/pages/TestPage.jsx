@@ -13,7 +13,7 @@ function TestPage() {
 
   return (
     // 버튼 테스트
-    <section className="flex flex-col items-center justify-center gap-4 bg-gradient-to-b from-[#FDF2F8] to-[#FFFFFF]">
+    <section className="flex flex-col items-center justify-center gap-4">
       <Card>
         <Button variant="primary" size="small">
           <span className="inline-flex items-center gap-2">
