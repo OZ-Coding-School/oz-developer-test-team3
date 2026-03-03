@@ -1,9 +1,11 @@
 import { useQuery } from '@tanstack/react-query';
-import { getResult } from '../api/result';
+import { getResults } from '../../api/services';
 
-export const useResult = () =>
+export const useResults = (type) =>
   useQuery({
-    queryKey: ['result'],
-    queryFn: getResult,
+    queryKey: ['result', type],
+    queryFn: () => getResults(type),
     staleTime: 1000 * 60,
+    enabled: !!type,
+    select: (data) => data?.result ?? data,
   });
