@@ -1,6 +1,7 @@
 import cn from '../../utils/cn';
 
-const base = 'inline-flex items-center justify-center rounded-sm font-medium';
+const base =
+  'inline-flex items-center justify-center rounded-sm font-medium shadow-[0_1px_2px_-1px_rgba(0,0,0,0.1),0_1px_3px_0_rgba(0,0,0,0.1)]';
 
 const variants = {
   primary: 'bg-primary text-white',
