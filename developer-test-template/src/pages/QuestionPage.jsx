@@ -30,18 +30,18 @@ function QuestionPage() {
   if (!question) return <Card>질문 데이터 오류</Card>;
 
   return (
-    <Card className="">
+    <Card className="w-full max-w-[448px]">
       <ProgressBar current={safeStep + 1} total={total} />
 
-      <img className="h-30 w-30" src={hamster} alt="" />
-      <h1 className="mt-6 text-lg font-semibold">Q{safeStep + 1}</h1>
-      <h2 className="mt-6 text-lg">{question.text}</h2>
+      <img className="mt-7 h-30 w-30" src={hamster} alt="" />
+      <h1 className="mt-6 text-xl font-semibold">Q{safeStep + 1}</h1>
+      <h2 className="text-body mt-2 text-base font-normal">{question.text}</h2>
 
-      <div className="mt-6 flex flex-col gap-3">
+      <div className="mt-8 flex flex-col">
         {question.options.map((opt, idx) => (
           <Button
             key={idx}
-            className="bg-background text-body"
+            className="bg-background text-body mb-4 justify-start pl-6 font-medium"
             onClick={() => {
               const key = `q${safeStep + 1}`;
               const type = opt.type;
@@ -63,6 +63,7 @@ function QuestionPage() {
           </Button>
         ))}
       </div>
+      <footer className="text-muted mt-8 text-xs">made with ❤ Ozcoding️</footer>
     </Card>
   );
 }
