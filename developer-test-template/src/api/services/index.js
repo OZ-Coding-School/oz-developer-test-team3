@@ -5,9 +5,8 @@ export const getQuestions = async () => {
   const { data } = await api.get('/api/questions');
   return data;
 };
-
-// 특정 질문 조회
-export const getQuestionById = async (id) => {
-  const { data } = await api.get(`/api/questions/${id}`);
+// 결과 조회
+export const getResults = async (type) => {
+  const { data } = await api.get(`/api/results/${type}`);
   return data;
 };
